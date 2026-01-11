@@ -1,2 +1,164 @@
-# shyam glassware equipment 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shyam Glassware Equipment</title>
+<style>
+/* General Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { line-height: 1.6; color: #333; }
+a { text-decoration: none; color: inherit; }
+
+/* Header / Hero */
+header {
+    background: url('https://images.unsplash.com/photo-1581091012184-0d3e0a46be10?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+header h1 { font-size: 3em; margin-bottom: 20px; }
+header p { font-size: 1.3em; margin-bottom: 30px; }
+header a.button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+header a.button:hover { background-color: #0056b3; }
+
+/* Section Styles */
+section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+
+/* Products Section */
+#products h2 { text-align: center; margin-bottom: 40px; color: #007bff; }
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.product-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; text-align: center; transition: 0.3s; }
+.product-card:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+.product-card img { width: 100%; height: 180px; object-fit: contain; margin-bottom: 10px; }
+.product-card h3 { margin-bottom: 10px; color: #007bff; }
+.product-card a { display: inline-block; padding: 8px 15px; background-color: #007bff; color: white; border-radius: 5px; font-size: 0.9em; }
+.product-card a:hover { background-color: #0056b3; }
+
+/* About Section */
+#about h2 { text-align: center; margin-bottom: 20px; color: #007bff; }
+#about p { text-align: center; max-width: 800px; margin: auto; }
+
+/* Contact Section */
+#contact h2 { text-align: center; margin-bottom: 20px; color: #007bff; }
+#contact p { text-align: center; margin-bottom: 30px; }
+.contact-form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+.contact-form input, .contact-form textarea {
+    padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em; width: 100%;
+}
+.contact-form button {
+    padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 1em;
+    cursor: pointer; transition: 0.3s;
+}
+.contact-form button:hover { background-color: #0056b3; }
+
+/* Footer */
+footer { background-color: #007bff; color: white; text-align: center; padding: 20px; }
+footer a { color: white; text-decoration: underline; }
+
+/* WhatsApp Chat Button */
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+#whatsapp:hover { background-color: #1ebe57; }
+
+@media(max-width:768px){
+    header h1 { font-size: 2em; }
+    header p { font-size: 1em; }
+}
+</style>
+</head>
+<body>
+
+<!-- Header / Hero -->
+<header>
+    <h1>Premium Laboratory Glassware Equipment</h1>
+    <p>Beakers, Flasks, Condensers, Distillation Sets & More</p>
+    <a href="#contact" class="button">Contact Us / Get Catalog</a>
+</header>
+
+<!-- Products Section -->
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1581090700226-d184bc90a1b2?auto=format&fit=crop&w=400&q=80" alt="Beaker">
+            <h3>Beaker</h3>
+            <a href="#contact">Enquire Now</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1614964020002-8dc74c7873a7?auto=format&fit=crop&w=400&q=80" alt="Conical Flask">
+            <h3>Conical Flask</h3>
+            <a href="#contact">Enquire Now</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1581091012184-0d3e0a46be10?auto=format&fit=crop&w=400&q=80" alt="Volumetric Flask">
+            <h3>Volumetric Flask</h3>
+            <a href="#contact">Enquire Now</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1596495577886-0a49a44b8f4e?auto=format&fit=crop&w=400&q=80" alt="Measuring Cylinder">
+            <h3>Measuring Cylinder</h3>
+            <a href="#contact">Enquire Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Shyam Glassware Equipment is a trusted manufacturer and exporter of high-quality laboratory glassware. We provide premium products for laboratories worldwide. Our products meet international standards and are designed for durability, precision, and reliability.</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📧 Email: rk5197791@gmail.com | 📞 Mobile/WhatsApp: +91 9817293209</p>
+    <form class="contact-form" action="mailto:rk5197791@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align:center;margin-top:20px;">
+        <a href="Shyam-Glassware-Catalog.pdf" download style="background-color:#007bff;color:white;padding:10px 20px;border-radius:5px;">Download Catalog</a>
+    </p>
+</section>
+
+<!-- WhatsApp Chat Button -->
+<a href="https://wa.me/919817293209" target="_blank" id="whatsapp">💬</a>
+
+<!-- Footer -->
+<footer>
+    &copy; 2026 Shyam Glassware Equipment. All Rights Reserved. | <a href="mailto:rk5197791@gmail.com">Contact</a>
+</footer>
+
+</body>
+</html>
+ shyam glassware equipment 
 Glassware equipment 
